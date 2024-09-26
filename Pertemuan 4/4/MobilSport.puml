@@ -1,0 +1,10 @@
+@startuml
+
+class MobilSport {
+    - String nama
+    + MobilSport(String nama)
+    + gigi(int g)
+    + gigi(int g, int t)
+}
+
+@enduml

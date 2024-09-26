@@ -1,0 +1,22 @@
+@startuml
+
+class Karyawan {
+    # String nama
+    + Karyawan(String nama)
+    + kerja()
+}
+
+class Dosen {
+    + Dosen(String nama)
+    + kerja()
+}
+
+class Staff {
+    + Staff(String nama)
+    + kerja()
+}
+
+Karyawan <|-- Dosen
+Karyawan <|-- Staff
+
+@enduml
