@@ -1,0 +1,31 @@
+@startuml
+class BangunDatar {
+  +luas(): int
+  +keliling(): int
+}
+
+class Persegi {
+  -sisi: int
+  +Persegi(sisi: int)
+  +luas(): int
+  +keliling(): int
+}
+
+class Segitiga {
+  -alas: int
+  -tinggi: int
+  +Segitiga(alas: int, tinggi: int)
+  +luas(): int
+}
+
+class Lingkaran {
+  -r: int
+  +Lingkaran(r: int)
+  +luas(): int
+  +keliling(): int
+}
+
+BangunDatar <|-- Persegi
+BangunDatar <|-- Segitiga
+BangunDatar <|-- Lingkaran
+@enduml
